@@ -4,22 +4,13 @@
         {
             "src": "./index.js",
             "use": "@vercel/node"
-        },
-        {
-            "src": "package.json",
-            "use": "@vercel/static-build",
-            "config": {
-                "maxLambdaSize": "10mb"
-            }
         }
     ],
-    "install": {
-        "skip": true
-    },
     "routes": [
         {
             "src": "/(.*)",
             "dest": "/"
         }
+        
     ]
 }
