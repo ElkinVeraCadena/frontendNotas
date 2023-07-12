@@ -1,11 +1,5 @@
 {
     "version": 2,
-    "build": {
-        "env": {
-            "CI": "true",
-            "SKIP_INSTALL": "true"
-        }
-    },
     "builds":[
         {
             "src": "./index.js",
