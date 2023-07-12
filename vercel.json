@@ -4,7 +4,8 @@
         "env": {
             "CI": "true",
             "NPM_FLAGS": "--force"
-        },
+        }
+    },
     "builds":[
         {
             "src": "./index.js",
