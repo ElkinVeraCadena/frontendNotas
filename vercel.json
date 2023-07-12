@@ -7,11 +7,14 @@
         },
         {
             "src": "package.json",
-            "use": "@vercel/node"
+            "use": "@vercel/static-build",
+            "config": {
+                "maxLambdaSize": "10mb"
+            }
         }
     ],
-    "env": {
-        "NPM_FLAGS": "--force"
+    "install": {
+        "skip": true
     },
     "routes": [
         {
